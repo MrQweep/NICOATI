@@ -1,3 +1,6 @@
+body {
+    font-family: Sans-Serif;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -21,8 +24,42 @@ li a {
 li a:hover {
     background-color: #111;
 }
+.home {
+    width: 100%;
+    content: url("assets/img/header_bg2.jpg");
+    object-fit: contain
 
-#group1 h1 {
+}
+
+h1{
     text-align: center;
+    margin-top: 0px;
+
+}
+#about{
+    margin:auto;
+    width: 80%;
+}
+.sectionthing{
+
+}
+.sectionthing div{
+    padding: 20px
+}
+.sectionthing hr {
+    width: 19%;
+}
+
+.sectionthing p {
+    text-align: center;
+    font-size: 120%;
+    margin-bottom: 0px;
+
+}
+.designer {
+    background-color: aqua;
+}
+.coder {
+    background-color: red;
 }
 
