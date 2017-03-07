@@ -25,10 +25,22 @@ li a:hover {
     background-color: #111;
 }
 .home {
-    width: 100%;
-    content: url("assets/img/header_bg2.jpg");
-    object-fit: contain
 
+    width: 100%;
+    height: 500px;
+    background-image: url("assets/img/header_bg2.jpg");
+    background-size: contain;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+
+
+}
+.home header{
+    text-align: center;
+    position: relative;
+    top: 225px;
+    font-size: 250%;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 h1{
@@ -37,14 +49,15 @@ h1{
 
 }
 #about{
-    margin:auto;
-    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+    width: 90%;
 }
 .sectionthing{
 
 }
 .sectionthing div{
-    padding: 20px
+    padding: 60px
 }
 .sectionthing hr {
     width: 19%;
@@ -52,9 +65,10 @@ h1{
 
 .sectionthing p {
     text-align: center;
-    font-size: 120%;
+    font-size:150%;
     margin-bottom: 0px;
-
+    margin: 0px auto 0px auto;
+    max-width: 1200px;
 }
 .designer {
     background-color: aqua;
