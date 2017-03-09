@@ -1,16 +1,25 @@
 body {
-    font-family: SansSerif;
+    font-family: "Lato Light" , Lato, sans-serif;
+    margin: 0;
 }
+
+br {
+    width: 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-left: 2px dashed grey;
+    border-right: 2px dashed grey;
 }
 
 li {
     float: left;
+
 }
 
 li a {
@@ -24,26 +33,28 @@ li a {
 li a:hover {
     background-color: #111;
 }
-.home {
 
+.home{
+    background: url("assets/img/header_bg2.jpg") no-repeat center;
+    background-size: contain;
     width: 100%;
-    min-width: 800px;
-    height: 500px;
-    background-size: contain;                      /* <------ */
-    background: url("assets/img/header_bg2.jpg") no-repeat center center;
-
-}
-.home header{
-    text-align: center;
-    position: relative;
-    top: 225px;
+    min-height: 500px;
     font-size: 250%;
     text-shadow: 1px 1px 2px #fff;
+    border: 2px dashed grey;
+    border-bottom: 1px groove;
+    border-top: 1px groove transparent;
+}
+div.text {
+    text-align: center;
+    position: relative;
+    top: 150px;
 }
 
 h1{
+    font-size: 250%;
     text-align: center;
-    margin-top: 0;
+    margin: auto 0;
 
 }
 #about{
@@ -70,7 +81,7 @@ h1{
     max-width: 1200px;
 }
 .designer {
-    background-color: aqua;
+    background-image: url("assets/img/bg/divider12.png");
 }
 .coder {
     background-color: red;
