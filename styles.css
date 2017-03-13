@@ -19,7 +19,6 @@ ul {
 
 li {
     float: left;
-
 }
 
 li a {
@@ -47,7 +46,7 @@ li a:hover {
 div.text {
     text-align: center;
     position: relative;
-    top: 150px;
+    top: 180px;
 }
 
 h1{
@@ -87,4 +86,58 @@ h1{
 .coder {
     background-image: url("assets/img/bg/divider22.jpg");
 }
+.skills{
+    color:black;
+    text-shadow:none;
+    background-color: #ededed;
+}
+.barchart{
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
 
+.skill {
+    display: inline-block;
+}
+.categories{
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+.categories div{
+    display: inline-block;
+    margin: 2% 5%;
+    padding: 1px 15px;
+    background-color: #333333;
+}
+.portfigures{
+    text-align: center;
+}
+.portfigures div{
+    display:inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+figure img{
+    width: 10em;
+}
+.mini.post{
+    margin:auto;
+}
+.mini.post div{
+    margin:auto;
+    background-color: #111;
+    color: white;
+}
+.post{
+    max-width: 30%;
+    display: inline-block;
+    vertical-align:top
+}
+.address {
+    color: white;
+    min-height: 500px;
+    background-image: url("assets/img/bg/divider661.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
