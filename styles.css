@@ -50,15 +50,19 @@ div.text {
 }
 
 h1{
-    font-size: 250%;
+    font-weight: lighter;
+    font-size: 2.5em;
     text-align: center;
     margin: auto 0;
 
 }
+h4{
+    text-align: center;
+}
 #about{
     margin: 0 auto 0 auto;
     padding: 0 0 0 0;
-    max-width: 800px;
+    max-width: 50em;
     width: 90%;
 }
 #about p{
@@ -70,13 +74,13 @@ h1{
     padding: 60px 0 60px 0;
     text-shadow: 1px 1px 2px #000;
 }
-.aboutsection hr {
+hr {
     width: 19%;
 }
 
 .aboutsection p {
     text-align: center;
-    font-size:150%;
+    font-size: 1.5em;
     margin: 0 auto;
     max-width: 70%;
 }
@@ -94,22 +98,58 @@ h1{
 .barchart{
     margin: 0 auto 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 20em;
+    width: 40%;
+    align-items: flex-end;
 }
 
 .skill {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 10em;
 }
+.html.skill{
+    background: #60b2a9;
+    background: linear-gradient(#afdad5, #5fb2a8);
+    border: 1px solid #60b2a9;
+    height: 19em;
+}
+.css.skill{
+    background: #e1af9f;
+    background: linear-gradient(#f4dcd6, #e1af9f);
+    border: 1px solid #e1af9f;
+    height: 16em;
+}
+.javas.skill{
+    background: #e7af30;
+    background: linear-gradient(#efc563, #dfae36);
+    border: 1px solid #e7af30;
+    height: 18em;
+}
+.wordpress.skill{
+    background: #bc8e5b;
+    background: linear-gradient(#dcba83, #bc8e5b);
+    border: 1px solid #bc8e5b;
+    height: 16em;
+}
+
 .categories{
     margin: 0 auto;
     max-width: 500px;
-
     display: flex;
 }
-.categories div{
+.categories>div{
+    color: white;
     text-align: center;
     margin: 2% 5%;
     padding: 1px 15px;
-    background-color: #333333;
+    background-color: #808080;
+}
+.categories p{
+    margin: 10px auto;
 }
 .portfigures{
     text-align: center;
@@ -117,7 +157,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfigures div{
+.portfigures>div{
     text-align: center;
     margin: 0 auto;
 }
@@ -125,36 +165,79 @@ figure img{
     width: 10em;
 }
 
+#blog{
+ background: #f5f5f5;
+}
 .postcontainer{
     display:flex;
     flex-direction: row;
+    justify-content: center;
 }
-.mini{
+.avatardiv{
+    min-width: 10em;
+    text-align: center;
+    font-weight: lighter;
+    background: #2b2b2b;
+    color: white;
+}
+.mini.post{
+    min-width: 10em;
+    background: #f5f5f5;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.mini.post div{
+.mini.post>div{
     padding: 10px;
-    margin: 5px;
-    background-color: #111;
+    margin: 0.5em;
+    background-color: #2b2b2b;
     color: white;
 }
 .post{
+    background: white;
     display: flex;
-
-    max-width: 30%;
     vertical-align:top
 }
 .post div{
     padding: 10px;
 }
+
+figcaption{
+    background: #1299c5;
+    color: white;
+    opacity: 1;
+    padding: 10px;
+    width: 12em;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+figcaption h5, a{
+    margin: 0;
+}
+figcaption a {
+    text-decoration: none;
+    background: #1b1b1b;
+    color: white;
+    padding: 5px;
+    font-size: 85%;
+
+}
 .address {
+    text-align: center;
     color: white;
     min-height: 500px;
-    background-image: url("assets/img/bg/divider661.jpg");
+    background: url("assets/img/bg/divider661.jpg") no-repeat left center;
     background-size: cover;
-    background-repeat:no-repeat;
+}
+.address p{
+    font-size: 2em;
+}
+
+.address h1{
+    padding-top: 3em;
 }
 .contact{
 
@@ -162,4 +245,26 @@ figure img{
 .contactsection{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
 }
+.contactsection>div{
+    width: 30%;
+}
+.contactsection form div{
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: #5a9edb;
+}
+.credits {
+    padding: 60px 0 60px 0;
+    background: #2b2b2b;
+    color: white;
+}
+.credits h4{
+    padding: 0 60px;
+}
+
