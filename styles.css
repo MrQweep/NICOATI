@@ -1,12 +1,31 @@
 body {
     font-family: "Lato Light" , Lato, sans-serif;
     margin: 0;
+    color: #333333;
 }
 
 br {
     width: 10px;
 }
 
+h1{
+    font-weight: lighter;
+    font-size: 2.5em;
+    text-align: center;
+    margin: auto 0;
+
+}
+h4{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #5a9edb;
+}
+hr {
+    width: 19%;
+}
+/*NavBar*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -32,7 +51,7 @@ li a {
 li a:hover {
     background-color: #111;
 }
-
+/*Home*/
 .home{
     background: url("assets/img/header_bg2.jpg") no-repeat center;
     background-size: contain;
@@ -49,16 +68,7 @@ div.text {
     top: 180px;
 }
 
-h1{
-    font-weight: lighter;
-    font-size: 2.5em;
-    text-align: center;
-    margin: auto 0;
-
-}
-h4{
-    text-align: center;
-}
+/*aboutthings*/
 #about{
     margin: 0 auto 0 auto;
     padding: 0 0 0 0;
@@ -74,9 +84,7 @@ h4{
     padding: 60px 0 60px 0;
     text-shadow: 1px 1px 2px #000;
 }
-hr {
-    width: 19%;
-}
+
 
 .aboutsection p {
     text-align: center;
@@ -90,6 +98,8 @@ hr {
 .coder {
     background-image: url("assets/img/bg/divider22.jpg");
 }
+/*Skills-Section*/
+
 .skills{
     color:black;
     text-shadow:none;
@@ -104,37 +114,49 @@ hr {
     width: 40%;
     align-items: flex-end;
 }
+.barchart div{
+    font-size: 150%;
+    font-weight: bold;
+    color: rgba(255,255,255,0.4);
+}
+.barchart div:nth-child(2){
+    font-size: 100%;
+    font-weight: normal;
+    color:white;
+}
 
 .skill {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 10em;
+    width: 20%;
 }
 .html.skill{
     background: #60b2a9;
     background: linear-gradient(#afdad5, #5fb2a8);
     border: 1px solid #60b2a9;
-    height: 19em;
+    height: 95%;
 }
 .css.skill{
     background: #e1af9f;
     background: linear-gradient(#f4dcd6, #e1af9f);
     border: 1px solid #e1af9f;
-    height: 16em;
+    height: 80%;
 }
 .javas.skill{
     background: #e7af30;
     background: linear-gradient(#efc563, #dfae36);
     border: 1px solid #e7af30;
-    height: 18em;
+    height: 90%;
 }
 .wordpress.skill{
     background: #bc8e5b;
     background: linear-gradient(#dcba83, #bc8e5b);
     border: 1px solid #bc8e5b;
-    height: 16em;
+    height: 80%;
 }
+
+/*Portfolio*/
 
 .categories{
     margin: 0 auto;
@@ -164,6 +186,8 @@ hr {
 figure img{
     width: 10em;
 }
+
+/*Blog*/
 
 #blog{
  background: #f5f5f5;
@@ -225,7 +249,11 @@ figcaption a {
     font-size: 85%;
 
 }
+
+/*Adress-Sectiom*/
+
 .address {
+    text-shadow: 1px 1px 2px #111;
     text-align: center;
     color: white;
     min-height: 500px;
@@ -239,9 +267,8 @@ figcaption a {
 .address h1{
     padding-top: 3em;
 }
-.contact{
+/*Contact-Section*/
 
-}
 .contactsection{
     display: flex;
     flex-direction: row;
@@ -253,18 +280,17 @@ figcaption a {
     width: 30%;
 }
 .contactsection form div{
-    margin: 10px 0;
+    margin: 15px 0;
 }
-a{
-    text-decoration: none;
-    color: #5a9edb;
-}
+
+/*Credit-Section*/
 .credits {
     padding: 60px 0 60px 0;
     background: #2b2b2b;
     color: white;
 }
 .credits h4{
+    text-align: left;
     padding: 0 60px;
 }
 
