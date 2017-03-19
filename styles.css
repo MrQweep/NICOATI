@@ -102,37 +102,52 @@ h1{
 .categories{
     margin: 0 auto;
     max-width: 500px;
-    text-align: center;
+
+    display: flex;
 }
 .categories div{
-    display: inline-block;
+    text-align: center;
     margin: 2% 5%;
     padding: 1px 15px;
     background-color: #333333;
 }
 .portfigures{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .portfigures div{
-    display:inline-block;
     text-align: center;
     margin: 0 auto;
 }
 figure img{
     width: 10em;
 }
-.mini.post{
-    margin:auto;
+
+.postcontainer{
+    display:flex;
+    flex-direction: row;
+}
+.mini{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .mini.post div{
-    margin:auto;
+    padding: 10px;
+    margin: 5px;
     background-color: #111;
     color: white;
 }
 .post{
+    display: flex;
+
     max-width: 30%;
-    display: inline-block;
     vertical-align:top
+}
+.post div{
+    padding: 10px;
 }
 .address {
     color: white;
@@ -140,4 +155,11 @@ figure img{
     background-image: url("assets/img/bg/divider661.jpg");
     background-size: cover;
     background-repeat:no-repeat;
+}
+.contact{
+
+}
+.contactsection{
+    display: flex;
+    flex-direction: row;
 }
