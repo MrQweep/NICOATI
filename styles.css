@@ -61,7 +61,7 @@ li a:hover {
     background: url("assets/img/header_bg2.jpg") no-repeat center;
     background-size: contain;
     min-height: 500px;
-    font-size: 250%;
+    font-size: 2.5em;
     text-shadow: 1px 1px 2px #fff;
     /*border: 2px dashed grey;*/
     border-bottom: 1px groove;
@@ -127,13 +127,13 @@ div.text {
 }
 
 .barchart div {
-    font-size: 150%;
+    font-size: 1.5em;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.4);
 }
 
 .barchart div div:last-child {
-    font-size: 100%;
+    font-size: 1em;
     font-weight: normal;
     color: white;
 }
@@ -235,22 +235,20 @@ figcaption {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-around;
-
 }
 
 figcaption h5, a {
     margin: 0;
 }
 
+
 figcaption a {
     text-decoration: none;
     background: #1b1b1b;
     color: white;
     padding: 5px;
-    font-size: 85%;
-
+    font-size: 0.85em;
 }
-
 /*Blog*/
 
 #blog {
@@ -342,4 +340,24 @@ figcaption a {
 
 .credits h4 {
     text-align: center;
+}
+
+@media (max-width: 800pt){
+    .postcontainer{
+        flex-direction: column;
+    }
+    .contactsection{
+        flex-direction: column;
+    }
+    .contactsection > div {
+        width: 100%;
+    }
+    .mini.post{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .mini.post div{
+        margin: 0;
+    }
 }
