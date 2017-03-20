@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato Light" , Lato, sans-serif;
+    font-family: "Lato Light", Lato, sans-serif;
     margin: 0;
     color: #333333;
 }
@@ -8,23 +8,27 @@ br {
     width: 10px;
 }
 
-h1{
+h1 {
     font-weight: lighter;
     font-size: 2.5em;
     text-align: center;
     margin: auto 0;
 
 }
-h4{
+
+h4 {
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: #5a9edb;
 }
+
 hr {
     width: 19%;
 }
+
 /*NavBar*/
 ul {
     list-style-type: none;
@@ -32,8 +36,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    border-left: 2px dashed grey;
-    border-right: 2px dashed grey;
+    /*border-left: 2px dashed grey;
+    border-right: 2px dashed grey;*/
 }
 
 li {
@@ -51,17 +55,19 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
 /*Home*/
-.home{
+.home {
     background: url("assets/img/header_bg2.jpg") no-repeat center;
     background-size: contain;
     min-height: 500px;
     font-size: 250%;
     text-shadow: 1px 1px 2px #fff;
-    border: 2px dashed grey;
+    /*border: 2px dashed grey;*/
     border-bottom: 1px groove;
     border-top: 1px groove transparent;
 }
+
 div.text {
     text-align: center;
     position: relative;
@@ -69,22 +75,23 @@ div.text {
 }
 
 /*aboutthings*/
-#about{
+#about {
     margin: 0 auto 0 auto;
     padding: 0 0 0 0;
     max-width: 50em;
     width: 90%;
 }
-#about p{
+
+#about p {
     margin: 0;
     padding: 25px 0 10px 0;
 }
-.aboutsection{
+
+.aboutsection {
     color: white;
     padding: 60px 0 60px 0;
     text-shadow: 1px 1px 2px #000;
 }
-
 
 .aboutsection p {
     text-align: center;
@@ -92,37 +99,43 @@ div.text {
     margin: 0 auto;
     max-width: 70%;
 }
+
 .designer {
     background-image: url("assets/img/bg/divider12.png");
 }
+
 .coder {
     background-image: url("assets/img/bg/divider22.jpg");
 }
+
 /*Skills-Section*/
 
-.skills{
-    color:black;
-    text-shadow:none;
+.skills {
+    color: black;
+    text-shadow: none;
     background-color: #ededed;
 }
-.barchart{
-    margin: 0 auto 0 auto;
+
+.barchart {
+    margin: 2em auto 0 auto;
     text-align: center;
     display: flex;
     justify-content: space-around;
     height: 20em;
-    width: 40%;
+    width: 80%;
     align-items: flex-end;
 }
-.barchart div{
+
+.barchart div {
     font-size: 150%;
     font-weight: bold;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
-.barchart div:nth-child(2){
+
+.barchart div div:last-child {
     font-size: 100%;
     font-weight: normal;
-    color:white;
+    color: white;
 }
 
 .skill {
@@ -130,26 +143,31 @@ div.text {
     flex-direction: column;
     justify-content: flex-end;
     width: 20%;
+    min-width: 5em;
 }
-.html.skill{
+
+.html.skill {
     background: #60b2a9;
     background: linear-gradient(#afdad5, #5fb2a8);
     border: 1px solid #60b2a9;
     height: 95%;
 }
-.css.skill{
+
+.css.skill {
     background: #e1af9f;
     background: linear-gradient(#f4dcd6, #e1af9f);
     border: 1px solid #e1af9f;
     height: 80%;
 }
-.javas.skill{
+
+.javas.skill {
     background: #e7af30;
     background: linear-gradient(#efc563, #dfae36);
     border: 1px solid #e7af30;
     height: 90%;
 }
-.wordpress.skill{
+
+.wordpress.skill {
     background: #bc8e5b;
     background: linear-gradient(#dcba83, #bc8e5b);
     border: 1px solid #bc8e5b;
@@ -157,80 +175,61 @@ div.text {
 }
 
 /*Portfolio*/
+#portfolio {
+    border-bottom: solid 1px #dddddd;
+    border-top: solid 1px #dddddd;
+    padding-bottom: 50px;
+}
 
-.categories{
+.categories {
     margin: 0 auto;
     max-width: 500px;
     display: flex;
 }
-.categories>div{
+
+.categories > div {
     color: white;
     text-align: center;
     margin: 2% 5%;
     padding: 1px 15px;
     background-color: #808080;
 }
-.categories p{
+
+.categories > div:hover {
+    background-color: lightgreen;
+}
+
+.categories p {
     margin: 10px auto;
 }
-.portfigures{
+
+.portfigures {
+    margin: auto;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfigures>div{
+
+.portfigures > div {
     text-align: center;
     margin: 0 auto;
 }
-figure img{
-    width: 10em;
-}
 
-/*Blog*/
-
-#blog{
- background: #f5f5f5;
-}
-.postcontainer{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.avatardiv{
-    min-width: 10em;
-    text-align: center;
-    font-weight: lighter;
-    background: #2b2b2b;
-    color: white;
-}
-.mini.post{
-    min-width: 10em;
-    background: #f5f5f5;
+figure {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-.mini.post>div{
-    padding: 10px;
-    margin: 0.5em;
-    background-color: #2b2b2b;
-    color: white;
-}
-.post{
-    background: white;
-    display: flex;
-    vertical-align:top
-}
-.post div{
-    padding: 10px;
 }
 
-figcaption{
+figure img {
+    width: 13em;
+}
+
+figcaption {
     background: #1299c5;
     color: white;
     opacity: 1;
-    padding: 10px;
+    padding: 0.5em;
     width: 12em;
     display: flex;
     flex-direction: row;
@@ -238,9 +237,11 @@ figcaption{
     justify-content: space-around;
 
 }
-figcaption h5, a{
+
+figcaption h5, a {
     margin: 0;
 }
+
 figcaption a {
     text-decoration: none;
     background: #1b1b1b;
@@ -248,6 +249,51 @@ figcaption a {
     padding: 5px;
     font-size: 85%;
 
+}
+
+/*Blog*/
+
+#blog {
+    background: #f5f5f5;
+}
+
+.postcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.avatardiv {
+    min-width: 8em;
+    text-align: center;
+    font-weight: lighter;
+    background: #2b2b2b;
+    color: white;
+}
+
+.mini.post {
+    min-width: 10em;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mini.post > div {
+    padding: 10px;
+    margin: 0.5em;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.post {
+    background: white;
+    display: flex;
+    vertical-align: top
+}
+
+.post div {
+    padding: 10px;
 }
 
 /*Adress-Sectiom*/
@@ -260,26 +306,30 @@ figcaption a {
     background: url("assets/img/bg/divider661.jpg") no-repeat left center;
     background-size: cover;
 }
-.address p{
+
+.address p {
     font-size: 2em;
 }
 
-.address h1{
+.address h1 {
     padding-top: 3em;
 }
+
 /*Contact-Section*/
 
-.contactsection{
+.contactsection {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 90%;
     margin: auto;
 }
-.contactsection>div{
+
+.contactsection > div {
     width: 30%;
 }
-.contactsection form div{
+
+.contactsection form div {
     margin: 15px 0;
 }
 
@@ -289,8 +339,7 @@ figcaption a {
     background: #2b2b2b;
     color: white;
 }
-.credits h4{
-    text-align: left;
-    padding: 0 60px;
-}
 
+.credits h4 {
+    text-align: center;
+}
