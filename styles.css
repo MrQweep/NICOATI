@@ -181,11 +181,13 @@ div.hometext {
 
 .categories {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 60em;
     display: flex;
+    justify-content: space-around;
 }
 
 .categories > div {
+    width: 20em;
     color: white;
     text-align: center;
     margin: 2% 5%;
